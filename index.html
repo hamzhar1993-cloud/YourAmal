@@ -1,4 +1,4 @@
-<!doctype html>
+၍<!doctype html>
 <html lang="my">
 <head>
 <meta charset="utf-8">
@@ -423,6 +423,18 @@ function adhanTick(){
 }
 render();
 setInterval(adhanTick,15000);
+if ("serviceWorker" in navigator) {
+  window.addEventListener("load", () => {
+    navigator.serviceWorker.register("./service-worker.js")
+      .then(registration => {
+        console.log("Your Amal PWA Ready:", registration.scope);
+      })
+      .catch(error => {
+        console.error("Service Worker Error:", error);
+      });
+  });
+}
+ 
 </script>
 </body>
 </html>
