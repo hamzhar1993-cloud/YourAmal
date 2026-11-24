@@ -1,21 +1,28 @@
+
 {
+  "id": "/YourAmal/",
   "name": "Your Amal",
   "short_name": "Your Amal",
-  "start_url": "./",
-  "scope": "./",
+  "description": "Your daily Islamic prayer and worship tracker",
+  "start_url": "/YourAmal/",
+  "scope": "/YourAmal/",
   "display": "standalone",
-  "background_color": "#ffffff",
-  "theme_color": "#12805c",
+  "orientation": "portrait",
+  "background_color": "#0b3028",
+  "theme_color": "#0b3028",
+  "prefer_related_applications": false,
   "icons": [
     {
-      "src": "icon-192.png",
+      "src": "/YourAmal/icon-192.png",
       "sizes": "192x192",
-      "type": "image/png"
+      "type": "image/png",
+      "purpose": "any"
     },
     {
-      "src": "icon-512.png",
+      "src": "/YourAmal/icon-512.png",
       "sizes": "512x512",
-      "type": "image/png"
+      "type": "image/png",
+      "purpose": "any"
     }
   ]
 }
